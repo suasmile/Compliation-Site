@@ -1,0 +1,81 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;     
+
+}
+
+.cursor{
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 999;
+ 
+    transition: transform 0.2s;
+}
+
+html,
+* {
+  cursor: none;
+}
+
+.Container{
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    display:grid;
+}
+
+.Item{
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: flex-grow .7s;
+}
+
+.Title{
+    height: 90%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+	font-weight: 200;
+    font-size: 12px;
+	line-height: 1.1;
+	color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    transition: flex-grow .7s;
+    margin-bottom: 70vh;
+}
+
+.Title:hover{
+    transform: scale(1.1);
+    font-size: 18px;
+}
+
+
+.Name{
+    overflow:hidden;
+    font-family: 'Red Hat Display', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	padding: 0;
+	font-size: 200px;
+	line-height: 1.1;
+	color: rgb(255, 255, 255);
+}
+
+
+a{
+    text-decoration: none;
+    color:#c88cff;
+}
+
+a:hover{
+    color:#fffd8c;
+}
